@@ -1,0 +1,57 @@
+[
+    {
+        "email": "random@gmail.com",
+        "password": "RandomPass1234!#",
+        "confirm_pass" : "RandomPass1234!#",
+        "expected": "registered user",
+        "message": "\n\nError: An account is already registered with your email address. Please log in. "
+    }, 
+    {
+        "email": "",
+        "password": "RandomPass1234!#",
+        "confirm_pass" : "RandomPass1234!#",
+        "expected": "null email",
+        "message":"\n\nError: Please provide a valid email address. "
+    },
+    {
+        "email": "random",
+        "password": "",
+        "confirm_pass" : "RandomPass1234!#",
+        "expected": "null password",
+        "message":"\n\nError: Please enter an account password. "
+    },
+    {
+        "email": "random",
+        "password": "RandomPass1234!#",
+        "confirm_pass" : "",
+        "expected": "null confirm password",
+        "message":"\n\nError: Invalid confirmation password "
+    },
+    {
+        "email": "random",
+        "password": "RandomPass1234!#",
+        "confirm_pass" : "RandomPass1234",
+        "expected": "password not same",
+        "message":"\n\nError: Passwords do not match "
+    },
+    {
+        "email": "random@gmail.com",
+        "password": "RandomPass",
+        "confirm_pass" : "RandomPass",
+        "expected": "low pass"
+    },
+    {
+        "email": "random",
+        "password": "RandomPass1234",
+        "confirm_pass" : "RandomPass1234",
+        "expected": "weak pass",
+        "message":""
+    },
+    {
+        "email": "random",
+        "password": "RandomPass1234!#",
+        "confirm_pass" : "RandomPass1234!#",
+        "expected": "valid data",
+        "message":"\n Thank you for registering. Your account has to be activated before you can login. Please check your email. "
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 10000,
+    "baseUrl" : "https://www.psegameshop.com/",
+    "env":{
+        "email":"aisyahnurulhaqi22@gmail.com",
+        "password":"RandomPass1234!"
+    },
+    "video" : true,
+    "videoCompression": false
+}

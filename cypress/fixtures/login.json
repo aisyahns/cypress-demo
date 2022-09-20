@@ -1,0 +1,43 @@
+[
+    {
+        "username": "",
+        "password": "RandomPass1234!#",
+        "expected": "null username",
+        "message": "\n\nError: Username is required. "
+    }, 
+    {
+        "username": "random@gmail.com",
+        "password": "",
+        "expected": "null password",
+        "message": "\n\nError: The password field is empty. "
+    },
+    {
+        "username": "random@gmail.com",
+        "password": "RandomPass1234!#",
+        "expected": "not yet verify email",
+        "message": "\n\nYour account has to be activated before you can login. You can resend the email with verification link by clicking here. "
+    }, 
+    {
+        "username": "aisyahnurulhaqi22@gmai.com",
+        "password": "RandomPass1234",
+        "expected": "unknown email",
+        "message": "\n\nUnknown email address. Check again or try your username. "
+    }, {
+        "username": "aisyahnurulhaqi22@gmail.com",
+        "password": "RandomPass1234",
+        "expected": "wrong pass",
+        "message": "\n\nError: The password you entered for the email address aisyahnurulhaqi22@gmail.com is incorrect. Lost your password? "
+    }, 
+    {
+        "username": "",
+        "password": "",
+        "expected": "null password and username",
+        "message": "\n\nError: Username is required. "
+    }, 
+    {
+        "username": "aisyahnurulhaqi22@gmail.com",
+        "password": "RandomPass1234!",
+        "expected": "valid data",
+        "message": "\n\nError: Username is required. "
+    }
+]
